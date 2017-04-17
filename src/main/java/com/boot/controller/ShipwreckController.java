@@ -8,7 +8,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/")
 public class ShipwreckController {
-
+//-Dspring.profiles.active=test
     @RequestMapping(value = "shipwrecks",method = RequestMethod.GET)
     public List<Shipwreck> list(){
         return ShipwreckStub.list();
